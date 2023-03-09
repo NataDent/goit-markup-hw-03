@@ -36,6 +36,9 @@ body {
   color: #434455;
 }
 .container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
   outline: 2px solid tomato;
 }
 .link {
@@ -46,12 +49,17 @@ body {
 .list {
   list-style: none;
 }
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /**------------- HEADER------------ */
-.top-line.container {
+.top-line {
   display: flex;
   width: 1440px;
   height: 72px;
-  justify-content: space-between;
+  padding: auto 156px;
 }
 .header-logo {
   color: var(--brand-color-light);
@@ -78,9 +86,7 @@ body {
   text-transform: uppercase;
   color: #2e2f42;
 }
-.header-box {
-  display: flex;
-}
+
 .header-link {
   font-weight: 500;
   font-size: 16px;
@@ -96,7 +102,6 @@ body {
 }
 .header-nav.container {
   display: flex;
-  background-color: tomato;
 }
 .header-list {
   display: flex;
@@ -121,10 +126,6 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
 }
-img {
-  display: block;
-  max-width: 100%;
-}
 
 /**------------- HERO------------ */
 .hero {
@@ -141,7 +142,6 @@ img {
   letter-spacing: 0.02em;
   color: #ffffff;
   padding: 0 auto;
-  margin-bottom: 48px;
 }
 .hero-btn {
   background-color: #4d5ae5;
@@ -196,6 +196,7 @@ img {
 .work-list,
 .team-list,
 .scrolls-list,
+.features-list,
 .examples-list {
   display: flex;
 }
