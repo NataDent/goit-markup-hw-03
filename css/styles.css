@@ -36,8 +36,7 @@ body {
   color: #434455;
 }
 .container {
-  outline-width: 3px;
-  outline-color: tomato;
+  width: 1440;
 }
 .link {
   text-decoration: none;
@@ -48,7 +47,10 @@ body {
   list-style: none;
 }
 /**------------- HEADER------------ */
-
+.top-line {
+  width: 1440px;
+  height: 72px;
+}
 .header-logo {
   color: var(--brand-color-light);
   font-family: "Raleway", sans-serif;
@@ -87,7 +89,9 @@ body {
 .button {
   cursor: pointer;
 }
-
+.header-nav.container {
+  background-color: tomato;
+}
 .address {
   font-style: normal;
 }
