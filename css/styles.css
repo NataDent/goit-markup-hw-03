@@ -36,7 +36,7 @@ body {
   color: #434455;
 }
 .container {
-  width: 1440;
+  outline: 2px solid tomato;
 }
 .link {
   text-decoration: none;
@@ -47,9 +47,11 @@ body {
   list-style: none;
 }
 /**------------- HEADER------------ */
-.top-line {
+.top-line.container {
+  display: flex;
   width: 1440px;
   height: 72px;
+  justify-content: space-between;
 }
 .header-logo {
   color: var(--brand-color-light);
@@ -76,6 +78,9 @@ body {
   text-transform: uppercase;
   color: #2e2f42;
 }
+.header-box {
+  display: flex;
+}
 .header-link {
   font-weight: 500;
   font-size: 16px;
@@ -90,10 +95,17 @@ body {
   cursor: pointer;
 }
 .header-nav.container {
+  display: flex;
   background-color: tomato;
+}
+.header-list {
+  display: flex;
 }
 .address {
   font-style: normal;
+}
+.address-list {
+  display: flex;
 }
 .address-item-contact:is(:hover, :focus) {
   color: #404bbf;
@@ -111,11 +123,15 @@ body {
 }
 img {
   display: block;
+  max-width: 100%;
 }
 
 /**------------- HERO------------ */
 .hero {
   background-color: #2e2f42;
+}
+.hero-container {
+  justify-content: center;
 }
 .hero-title {
   text-align: center;
@@ -124,6 +140,8 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  padding: 0 auto;
+  margin-bottom: 48px;
 }
 .hero-btn {
   background-color: #4d5ae5;
@@ -136,10 +154,16 @@ img {
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
+  border: none;
+  margin: 0 auto;
+  display: block;
 }
 
 /**------------- FEATURES------------ */
-
+.features-container {
+  display: flex;
+  outline: 2px solid tomato;
+}
 .features-title .scrolls-title {
   visibility: hidden;
 }
@@ -169,7 +193,11 @@ img {
   text-transform: capitalize;
   color: #2e2f42;
 }
-.work-list {
+.work-list,
+.team-list,
+.scrolls-list,
+.examples-list {
+  display: flex;
 }
 .work-item {
 }
@@ -263,9 +291,12 @@ img {
   background-color: var(--second-background-color);
 }
 .examples-list {
+  flex-wrap: wrap;
+  flex-basis: calc(100% / 3);
 }
 
 .examples-item {
+  margin: 0 24px 48px 0;
 }
 .examples-item-title {
   font-weight: 500;
