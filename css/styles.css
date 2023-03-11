@@ -41,6 +41,7 @@ body {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
+  outline: 1px solid tomato;
 }
 
 .link {
@@ -143,20 +144,22 @@ body {
 /**------------- HERO------------ */
 .hero {
   background-color: #2e2f42;
+  height: 600px;
+  text-align: center;
+  padding-top: 188px;
 }
 .hero-container {
-  justify-content: center;
-  margin: 0 auto;
-  padding: auto;
+  max-width: 496px;
+  margin: auto;
+  gap: 48px;
 }
 .hero-title {
-  text-align: center;
+  max-width: 496px;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
-  padding: 0 auto;
+  margin-bottom: 48px;
 }
 .hero-btn {
   background-color: #4d5ae5;
@@ -170,17 +173,19 @@ body {
   color: #ffffff;
   cursor: pointer;
   border: none;
-  margin: 0 auto;
   display: block;
+  margin: auto;
 }
+
 .examples-list {
   display: flex;
 }
 /**------------- FEATURES------------ */
-.features-container {
-  display: flex;
-  outline: 2px solid tomato;
+
+.feature-container {
+  padding: auto 156px;
 }
+
 .features-title .scrolls-title {
   visibility: hidden;
 }
@@ -285,7 +290,8 @@ body {
 }
 .scrolls-title {
 }
-.scrolls-list {
+.scrolls-list.list {
+  padding: 0 auto;
 }
 .scrolls-item {
 }
