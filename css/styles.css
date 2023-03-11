@@ -16,7 +16,7 @@ h6 {
   margin: 0;
 }
 ul {
-  padding-left: 0;
+  padding: 0;
   margin: 0;
 }
 :root {
@@ -41,7 +41,6 @@ body {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-  outline: 1px solid tomato;
 }
 
 .link {
@@ -147,6 +146,7 @@ body {
   height: 600px;
   text-align: center;
   padding-top: 188px;
+  min-width: 1158px;
 }
 .hero-container {
   max-width: 496px;
@@ -177,20 +177,22 @@ body {
   margin: auto;
 }
 
-.examples-list {
-  display: flex;
-}
 /**------------- FEATURES------------ */
-
-.feature-container {
-  padding: auto 156px;
+.features {
+  min-width: 1158px;
+  padding: 120px 141px;
 }
-
+.container.features-wrap {
+}
 .features-title .scrolls-title {
   visibility: hidden;
 }
+.features-list {
+  gap: 24px;
+}
 
 .features-list-item {
+  width: calc((100%-24px * 3) / 4);
 }
 
 .features-list-title {
@@ -204,6 +206,9 @@ body {
   letter-spacing: 0.02em;
 }
 /**------------- WORK------------ */
+.examples-list {
+  display: flex;
+}
 .work {
 }
 .work-title {
