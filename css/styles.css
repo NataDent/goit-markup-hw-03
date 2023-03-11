@@ -36,6 +36,11 @@ body {
   color: #434455;
 }
 .container {
+  display: flex;
+  box-sizing: border-box;
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .link {
@@ -52,9 +57,12 @@ body {
   height: auto;
 }
 /**------------- HEADER------------ */
-.header-container {
+.container.header-container {
+  box-sizing: border-box;
+  min-height: 72px;
   display: flex;
   justify-content: space-between;
+  padding: auto;
 }
 .header-logo {
   color: var(--brand-color-light);
@@ -63,10 +71,10 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
 }
 
 .half-header-logo {
@@ -80,6 +88,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
+  margin-right: 76px;
 }
 
 .header-link {
@@ -99,18 +108,21 @@ body {
   display: flex;
   text-align: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 .header-list.list {
   display: flex;
   padding: 0;
-  margin: 0;
+  margin-right: auto;
+  gap: 40px;
 }
 .address {
   font-style: normal;
-  margin-left: auto;
 }
-.address-list {
+.address {
   display: flex;
+  align-items: center;
 }
 .address-item-contact:is(:hover, :focus) {
   color: #404bbf;
@@ -161,7 +173,9 @@ body {
   margin: 0 auto;
   display: block;
 }
-
+.examples-list {
+  display: flex;
+}
 /**------------- FEATURES------------ */
 .features-container {
   display: flex;
