@@ -25,6 +25,7 @@ ul {
   --second-btn-color: #ffffff;
   --main-background-color: #f4f4fd;
   --second-background-color: #404bbf;
+  --gap: 24px;
 }
 
 body {
@@ -188,7 +189,7 @@ body {
   visibility: hidden;
 }
 .features-list {
-  gap: 24px;
+  gap: var(--gap);
 }
 
 .features-list-item {
@@ -206,10 +207,11 @@ body {
   letter-spacing: 0.02em;
 }
 /**------------- WORK------------ */
-.examples-list {
-  display: flex;
-}
 .work {
+}
+
+.work-item {
+  gap: 24px;
 }
 .work-title {
   font-weight: 700;
@@ -220,6 +222,7 @@ body {
   text-transform: capitalize;
   color: #2e2f42;
 }
+
 .work-list,
 .team-list,
 .scrolls-list,
@@ -228,6 +231,7 @@ body {
   display: flex;
 }
 .work-item {
+  gap: 24px;
 }
 /**------------- TEAM------------ */
 .team {
