@@ -231,7 +231,6 @@ body {
   display: flex;
 }
 .work-item {
-  gap: 24px;
 }
 /**------------- TEAM------------ */
 .team {
@@ -323,13 +322,25 @@ body {
   color: var(--second-btn-color);
   background-color: var(--second-background-color);
 }
-.examples-list {
-  flex-wrap: wrap;
-  flex-basis: calc(100% / 3);
+/**-------Examples---------*/
+.examples {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
+.examples-list {
+  flex-wrap: wrap;
+  flex-basis: calc(100%-48px )/ 3);
+  column-gap: 24px;
+  row-gap: 22px;
+}
+.examples-wrap {
+  max-width: 360px;
+  border: 1px solid #E7E9FC;
+}
 .examples-item {
-  margin: 0 24px 48px 0;
+ 
 }
 .examples-item-title {
   font-weight: 500;
