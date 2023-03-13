@@ -67,7 +67,7 @@ body {
   min-height: 72px;
   display: flex;
   justify-content: space-between;
-  padding: auto;
+ 
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -118,15 +118,27 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.address-wrap{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
 .header-list.list {
   display: flex;
   padding: 0;
-  
-  gap: 40px;
+  gap: 24px;
 }
 
 .address {
   font-style: normal;
+}
+
+.address-list {
+  display: flex;
+  
+ 
 }
 
 .address-item {
@@ -136,7 +148,7 @@ body {
 .address.address {
   display: flex;
   align-items: center;
-  
+
  
 }
 
@@ -154,6 +166,7 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
   margin-left: 40px;
+  
 }
 
 /**------------- HERO------------ */
@@ -403,6 +416,7 @@ background-color: var(--second-background-color);
 }
 
 /**-------Examples---------*/ 
+
 .examples {
   width: 1158px; 
   padding-left: 15px; 
