@@ -36,10 +36,16 @@ body {
   line-height: 1.5;
   color: #434455;
 }
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .container {
   box-sizing: border-box;
   display: flex;
-  width: 1158px;
+  max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -63,12 +69,10 @@ body {
 /**------------- HEADER------------ */
 
 .container.header-container {
-  box-sizing: border-box;
-  min-height: 72px;
   display: flex;
-  justify-content: space-between;
- 
+  align-items: center;
   border-bottom: 1px solid #e7e9fc;
+  min-height: 72px;
 }
 
 .header-logo {
