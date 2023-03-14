@@ -120,21 +120,6 @@ body {
   color: #404bbf;
 }
 
-
-.header-nav.container {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-.address-wrap{
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
 .header-list.list {
   display: flex;
   gap: 24px;
@@ -142,17 +127,18 @@ body {
 
 .address {
   font-style: normal;
+  margin-left: auto;
+  align-items: center;
 }
 
 .address-list {
   display: flex;
 }
 
-.address.address {
-  display: flex;
-  align-items: center;
-
- 
+.address-item {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .address-item-contact:is(:hover, :focus) {
@@ -169,7 +155,6 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
   margin-left: 40px;
-  
 }
 
 /**------------- HERO------------ */
