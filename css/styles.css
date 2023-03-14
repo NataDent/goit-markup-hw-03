@@ -234,8 +234,6 @@ body {
 .work-wrap {
   display: flex;
   flex-direction: column;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .work-item {
@@ -265,17 +263,22 @@ body {
 
 .team {
   background-color: #f4f4fd;
-  padding: 120px 141px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: auto;
-  padding-right: auto;
   background-color: #f4f4fd;
 }
+
+.team-card-info {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .team-title {
   font-weight: 700;
   font-size: 36px;
