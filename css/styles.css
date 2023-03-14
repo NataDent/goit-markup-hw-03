@@ -194,9 +194,6 @@ body {
 }
 
 /**------------- FEATURES------------ */
-.section {
-  padding: 0 141px;
-}
 
 .container.features-wrap {
   padding: 120px 141px;
@@ -293,7 +290,11 @@ body {
 
 .team-card {
 max-width:264px;
-} 
+}
+
+.team-member {
+  max-width: 360px;
+}
       
 .team-member-name {
  font-weight: 500;
@@ -358,15 +359,18 @@ max-width:264px;
 /**------------- SCROLLS------------ */
 
 .scrolls {
- min-width: 1158px;
- padding: 96px auto 72px;
+  min-width: 1158px;
+  padding: 96px auto 72px;
 } 
 
 .scrolls-list.list {
   display: flex;
   gap: 24px;
+}
 
-} 
+.scrolls-container {
+ 
+}
 
 .scrolls-btn {
   color: var(--main-btn-color) ; 
@@ -390,22 +394,24 @@ max-width:264px;
   background-color: var(--second-background-color);
 }
 
-
 /**-------Examples---------*/ 
 
 .examples {
+  display: flex;
+  flex-wrap: wrap; 
   width: 1158px; 
   padding-left: 15px; 
   padding-right: 15px;
 } 
+
 .examples-list {
-  flex-wrap: wrap; 
   flex-basis: calc((100%-48px) / 3);
   column-gap: 24px;
   row-gap: 22px;
 }
 
 .examples-wrap {
+  display: flex;
   max-width: 360px;
   border: 1px solid #e7e9fc;
 }
