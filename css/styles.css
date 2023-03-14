@@ -371,6 +371,7 @@ max-width:264px;
 
 .filters-list.list {
   display: flex;
+  justify-content: center;
   gap: 24px;
  margin: 96px auto 72px; 
 }
