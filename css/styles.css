@@ -228,19 +228,21 @@ body {
 }
 
 /**------------- WORK------------ */
+  
 
 .work-wrap {
   display: flex;
   flex-direction: column;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .work-item {
-  
   flex-wrap: wrap;
-  max-width: 360px;
   gap: 24px;
   flex-basis: calc((100%-48px) / 3);
 }
+
 .work-title {
   font-weight: 700;
   font-size: 36px;
