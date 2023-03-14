@@ -128,17 +128,16 @@ body {
 .address {
   font-style: normal;
   margin-left: auto;
-  align-items: center;
 }
 
 .address-list {
   display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .address-item {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .address-item-contact:is(:hover, :focus) {
@@ -236,7 +235,7 @@ body {
 }
 
 .work-item {
-  display: flex;
+  
   flex-wrap: wrap;
   max-width: 360px;
   gap: 24px;
