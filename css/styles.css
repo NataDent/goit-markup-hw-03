@@ -73,6 +73,7 @@ body {
   align-items: center;
   border-bottom: 1px solid #e7e9fc;
   min-height: 72px;
+  margin: 0;
 }
 
 .header-logo {
@@ -270,7 +271,9 @@ body {
 }
 
 .work-list {
-  flex-basis: calc((100%-2 * 24px) / 3); gap: 24px;
+  display: flex;
+  flex-basis: calc((100%-2 * 24px) / 3);
+  gap: 24px;
 } 
 
     
@@ -280,15 +283,15 @@ body {
 
 .team {
   width: 1158px; 
-  height: 732px;
+  height: auto;
 } 
 
 .team.container{
   display: flex;
   flex-direction:column;
- align-items: center; 
- padding-left: auto; 
- padding-right: auto;
+  align-items: center; 
+  padding-left: auto; 
+  padding-right: auto;
   background-color:#f4f4fd ;
 } 
 .team-title {
@@ -299,10 +302,11 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
-  margin: 120px auto 72px;
+  margin-bottom: 72px; 
  }
       
 .team-list {
+ display: flex;
  gap: 32px;
 } 
 
@@ -328,13 +332,13 @@ max-width:264px;
   }
 
       /**------------- FOOTER------------ */
- .footer {
+ .footer.section {
   background-color: #2e2f42;
-  height: 312px; 
-  width: 1158px; 
-  padding: 100px 156px; 
   justify-content: flex-start;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
+
       
 .footer-logo {color: var(--brand-color-light) ; 
   font-family: "Raleway", sans-serif; 
@@ -349,18 +353,19 @@ max-width:264px;
   color: #4d5ae5;
 } 
 
-.half-footer-logo {font-family:
-      "Raleway", sans-serif; 
-      font-style: normal; 
-      font-weight: 800; 
-      font-size: 18px;
-      line-height: 1.17; 
-      display: flex; 
-      align-items: center; 
-      letter-spacing: 0.03em; 
-      text-transform: uppercase; 
-      color: #f4f4fd;
-    } 
+.half-footer-logo {
+  font-family: "Raleway", sans-serif; 
+  font-style: normal; 
+  font-weight: 800; 
+  font-size: 18px;
+  line-height: 1.17; 
+  display: flex; 
+  align-items: center; 
+  letter-spacing: 0.03em; 
+  text-transform: uppercase; 
+  color: #f4f4fd;
+ } 
+
 .footer-text {
   color:#e7e9fc; 
   margin-top: 16px; 
@@ -448,7 +453,6 @@ background-color: var(--second-background-color);
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-
 .examples-item-text {
   letter-spacing: 0.02em;
 }
