@@ -356,7 +356,10 @@ max-width:264px;
 
 /**--------------ПОРТФОЛИО-----------*/
 
-      
+.portfolio {
+  padding-left: 141px;
+  padding-right: 141px;
+}      
 
 
 /**------------- SCROLLS------------ */
@@ -371,8 +374,6 @@ max-width:264px;
   gap: 24px;
  margin: 96px auto 72px; 
 }
-
-
 
 .filter-btn {
   color: var(--main-btn-color) ; 
@@ -404,16 +405,20 @@ max-width:264px;
   padding-right: 15px;
 } 
 
-.examples-container {
+.examples.container{
+ 
+  flex-basis: calc((100%-48px)/3);
+ 
+}
+
+.examples-list.list {
   display: flex;
   flex-wrap: wrap;
+  gap: 24px 22px;
 }
-.examples-wrap {
-  max-width: 360px;
-  border: 1px solid #e7e9fc;
-}
+
  .examples-item {
-max-width: 360px;
+width: calc((100%-48px)/3);
  }
 
 .examples-item-title {
