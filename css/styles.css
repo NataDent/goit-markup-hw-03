@@ -382,7 +382,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin: 96px auto 72px;
+  margin: 0 auto 72px;
 }
 
 .filter-btn {
