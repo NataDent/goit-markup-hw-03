@@ -361,20 +361,20 @@ max-width:264px;
 
 /**------------- SCROLLS------------ */
 
-.filtrs {
+.filters {
   background-color: #ffffff;
   
 }
 
-.filtrs-list.list {
+.filters-list.list {
   display: flex;
   gap: 24px;
-  padding: 96px auto 72px; 
+ margin: 96px auto 72px; 
 }
 
 
 
-.filtr-btn {
+.filter-btn {
   color: var(--main-btn-color) ; 
   background-color: var(--main-background-color) ; 
   font-family: inherit; 
@@ -391,7 +391,7 @@ max-width:264px;
   border-radius: 4px;
 }
 
-.filtr-btn:is(:hover, :focus){
+.filter-btn:is(:hover, :focus){
   color: var(--second-btn-color);
   background-color: var(--second-background-color);
 }
@@ -404,9 +404,9 @@ max-width:264px;
   padding-right: 15px;
 } 
 
-
 .examples-container {
   display: flex;
+  flex-wrap: wrap;
 }
 .examples-wrap {
   max-width: 360px;
