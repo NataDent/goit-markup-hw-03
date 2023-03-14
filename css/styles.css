@@ -362,17 +362,14 @@ max-width:264px;
 /**------------- SCROLLS------------ */
 
 .scrolls {
-  min-width: 1158px;
-  padding: 96px auto 72px;
-} 
+  background-color: #ffffff;
+}
 
 .scrolls-list.list {
   display: flex;
   gap: 24px;
-}
-
-.scrolls-container {
- 
+  padding: 96px auto 72px;
+  
 }
 
 .scrolls-btn {
@@ -402,7 +399,7 @@ max-width:264px;
 .examples {
   display: flex;
   flex-wrap: wrap; 
-  width: 1158px; 
+  max-width: 1158px; 
   padding-left: 15px; 
   padding-right: 15px;
 } 
