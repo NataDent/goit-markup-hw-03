@@ -260,8 +260,8 @@ body {
  /**------------- TEAM------------ */
 
 .team {
-  width: 1158px; 
-  height: auto;
+ background-color: #f4f4fd;
+ padding: 120px 141px;
 } 
 
 .team.container{
@@ -294,6 +294,9 @@ max-width:264px;
 
 .team-member {
   max-width: 360px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
       
 .team-member-name {
