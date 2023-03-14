@@ -329,6 +329,10 @@ body {
   padding-bottom: 100px;
 }
 
+.footer.section .container {
+  flex-direction: column;
+}
+
 .footer-logo {
   color: var(--brand-color-light);
   font-family: "Raleway", sans-serif;
