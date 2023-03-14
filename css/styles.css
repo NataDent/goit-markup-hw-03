@@ -368,9 +368,8 @@ body {
 
 /**--------------ПОРТФОЛИО-----------*/
 
-.portfolio {
-  padding-left: 141px;
-  padding-right: 141px;
+.portfolio .container {
+  flex-direction: column;
 }
 
 /**------------- SCROLLS------------ */
@@ -416,18 +415,21 @@ body {
   padding-right: 15px;
 }
 
-.examples.container {
-  flex-basis: calc((100%-48px) / 3);
-}
-
 .examples-list.list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px 22px;
+  flex-basis: calc((100%-48px) / 3);
 }
 
 .examples-item {
-  width: calc((100%-48px) / 3);
+  max-width: 360px;
+  background: #ffffff;
+  border: 1px solid #e7e9fc;
+}
+
+.examples-item-info {
+  padding: 32px 0 32px 16px;
 }
 
 .examples-item-title {
