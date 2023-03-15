@@ -367,7 +367,9 @@ body {
 }
 
 /**--------------ПОРТФОЛИО-----------*/
-
+.portfolio {
+  padding-top: 96px;
+}
 .portfolio .container {
   flex-direction: column;
 }
