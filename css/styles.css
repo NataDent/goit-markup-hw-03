@@ -71,12 +71,14 @@ body {
 
 /**------------- HEADER------------ */
 
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .container.header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #e7e9fc;
   min-height: 72px;
-  margin: 0;
 }
 
 .header-logo {
@@ -159,18 +161,14 @@ body {
 /**------------- HERO------------ */
 .hero {
   background-color: #2e2f42;
-  height: 600px;
   text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
   min-width: 1158px;
 }
-.hero-container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  text-align: center;
+
+.hero > .container {
+  flex-direction: column;
 }
 
 .hero-title {
@@ -198,6 +196,7 @@ body {
   border: none;
   display: block;
   margin: auto;
+  padding: 16px 32px;
 }
 
 /**------------- FEATURES------------ */
@@ -230,6 +229,10 @@ body {
 }
 
 /**------------- WORK------------ */
+
+.work {
+  padding-top: 0;
+}
 
 .work-wrap {
   display: flex;
@@ -267,11 +270,9 @@ body {
   padding-bottom: 120px;
 }
 
-.team.container {
-  display: flex;
+.team.section > .container {
   flex-direction: column;
   align-items: center;
-  background-color: #f4f4fd;
 }
 
 .team-card-info {
@@ -314,6 +315,7 @@ body {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .team-member-prof {
@@ -402,6 +404,7 @@ body {
   cursor: pointer;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
+  padding: 12px 24px;
 }
 
 .filter-btn:is(:hover, :focus) {
@@ -440,6 +443,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .examples-item-text {
   letter-spacing: 0.02em;
