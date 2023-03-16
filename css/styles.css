@@ -45,7 +45,7 @@ body {
 .container {
   box-sizing: border-box;
   display: flex;
-  max-width: 1158px;
+  width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -78,7 +78,6 @@ body {
 .container.header-container {
   display: flex;
   align-items: center;
-  min-height: 72px;
 }
 
 .header-logo {
